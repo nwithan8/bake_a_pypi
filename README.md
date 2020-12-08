@@ -1,6 +1,5 @@
-# bake_a_pypi
-Easy setup for a PyPi package
-
+# Bake a PyPi
+Easy setup for an automated PyPi package
 
 # Usage:
 - [ ] Change "packageName" in ``setup.py`` and ``_info.py`` to whatever your package name is.
