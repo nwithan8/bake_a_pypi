@@ -17,8 +17,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     author=package_info.__author__,  # Type in your name
     author_email=package_info.__author_email__,  # Type in your E-Mail
-    url=f'https://github.com/nwithan8/{package_info.__title__}',  # Provide either the link to your github or to your website
-    download_url=f'https://github.com/nwithan8/{package_info.__title__}/archive/{package_info.__version__}.tar.gz',
+    url=f'https://github.com/{package_info.__github_username__}/{package_info.__title__}',  # Provide either the link to your github or to your website
+    download_url=f'https://github.com/{package_info.__github_username__}/{package_info.__title__}/archive/{package_info.__version__}.tar.gz',
     keywords=package_info.__keywords__,
     install_requires=requirements,
     classifiers=[
