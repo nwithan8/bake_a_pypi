@@ -8,5 +8,5 @@ Easy setup for a PyPi package
 - Change "nwithan8" in ``setup.py`` to your GitHub username.
 - Do code.
 - In ``Settings -> Secrets``, add ``PYPI_USERNAME`` and ``PYPI_PASSWORD``
-- When making a release, update ``__version__`` in ``_info.py``. Set the TAG to this same version number EXACTLY.
+- When making a release, update ``__version__`` in ``_info.py`` This must be entirely numeric for PyPi (i.e. 1.0.0, not 1.0.b). Set the TAG to this same number EXACTLY.
 - Package will be automatically generated and uploaded to PyPi whenever a release is created.
