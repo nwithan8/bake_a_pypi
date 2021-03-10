@@ -9,7 +9,7 @@ with open("requirements.txt", 'r') as fh:
 
 setuptools.setup(
     name=package_info.__title__,  # How you named your package folder (MyLib)
-    packages=[package_info.__title__],  # Choose the same as "name"
+    packages=setuptools.find_packages(),
     version=package_info.__version__,  # Start with a small number and increase it with every change you make
     license=package_info.__license__,
     description=package_info.__description__,  # Give a short description about your library
