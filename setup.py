@@ -10,15 +10,15 @@ with open("requirements.txt", 'r') as fh:
 setuptools.setup(
     name=package_info.__title__,  # How you named your package folder (MyLib)
     packages=setuptools.find_packages(),
-    version=package_info.__version__,  # Start with a small number and increase it with every change you make
+    version=os.environ["TAG"],
     license=package_info.__license__,
     description=package_info.__description__,  # Give a short description about your library
     long_description=long_description,
     long_description_content_type="text/markdown",
     author=package_info.__author__,  # Type in your name
     author_email=package_info.__author_email__,  # Type in your E-Mail
-    url=f'https://github.com/{package_info.__github_username__}/{package_info.__title__}',  # Provide either the link to your github or to your website
-    download_url=f'https://github.com/{package_info.__github_username__}/{package_info.__title__}/archive/{package_info.__version__}.tar.gz',
+    url=f'https://github.com/{os.environ["GITHUB_REPO"]}',
+    download_url=f'https://github.com/{os.environ["GITHUB_REPO"]}/archive/refs/tags/{os.environ["TAG"]}.tar.gz',
     keywords=package_info.__keywords__,
     install_requires=requirements,
     classifiers=[
